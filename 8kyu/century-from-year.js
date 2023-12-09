@@ -8,11 +8,17 @@
 // 2000 --> 20
 
 function century(year) {
-    if(year > 999 ){
-      if(year[2] === 0 && year[3] === 0){
-        return year[0,1];
-      }
-    }
-    return;
-  }
-  console.log(century(1900));
+ if (year > 99) {
+        let answer = (year / 100) ;
+   
+        if (Number.isInteger(answer)) {
+            return Math.trunc(answer);
+
+        } else {
+            return Math.trunc(answer) + 1;
+        }
+    } else {
+        return 1;
+    } 
+
+}
