@@ -3,16 +3,25 @@
 
 // If the function is passed a valid PIN string, return true, else return false.
 
-function validatePIN (pin) {
-    let countNumberInPin = 0;
-    if (pin.length == 4 || pin.length == 6 && pin != ''){
-      for(let char of pin){
-        if(char != ' ' && char >= 0)countNumberInPin ++;
-        
+function validatePIN(pin) {
+
+  let countNumberInPin = 0;
+
+  let pinLengthWithO = pin.trim().length;
+  let numPin = Number(pin);
+  document.write(Number.isInteger(Number(pin)));
+  
+
+  if (pin.length === 4 || pin.length === 6) {
+
+      for (let char of pin) {
+
+          if (Number.isInteger(char)) countNumberInPin++;
       }
-      
-    }
-    
-    if(countNumberInPin == pin.length) return true ;
-      else return false; 
   }
+  if (countNumberInPin === pin.length && pin != '') return true;
+
+  else return false;
+
+}
+
