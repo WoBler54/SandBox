@@ -37,16 +37,23 @@
 //the tests your input is stripped of all whitespace.
 
 //SOLUTIONS:
-
 function toString(imput) {
   
     // I. Booleans
     if(imput == true || false){
-        return 1;
+        if(imput) return 'true';
+        else return 'false';
     }
     // II. Numbers
     if(typeof(imput) == "number"){
-        return imput + '';
-
+        let answer = '' + imput;     
+        return answer;
     }
+    //III. Arrays
+    if(typeof(imput) == 'array')Х
+        let answer = '';
+        for (let char of imput){
+            answer += char;
+        }
+        return answer;
   }
