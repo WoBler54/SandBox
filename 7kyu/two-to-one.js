@@ -18,7 +18,7 @@ function longest(s1, s2) {
     let sortByAlphabet = concatenate.split('').sort().join('');
     let arrForChar = [];
     let answer = '';
- 
+   
     // I haven't figured out how to access the next character in the loop
     for(let char of sortByAlphabet){
      arrForChar.push(char);
