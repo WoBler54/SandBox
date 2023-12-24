@@ -16,6 +16,7 @@ function findAverage(array) {
      return summ / array.length;    
     }else{    
       return 0;
+      
     }
   
   
