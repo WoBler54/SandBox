@@ -13,6 +13,6 @@
 // lengths, so you will not have to decide how to order multiple strings of the same length
 function sortByLength (array) {
     let sortedArray = [];
-    sortedArray = array.slice().sort((a, b) => a.length - b.length);
+    sortedArray = array.sort((a, b) => a.length - b.length);
     return sortedArray;
   }
